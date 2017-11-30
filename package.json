@@ -1,0 +1,34 @@
+{
+  "name": "ibird-open",
+  "version": "1.0.0-alpha.1",
+  "description": "Open browser addon for ibird.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinfxs/ibird-open.git"
+  },
+  "keywords": [
+    "ibird",
+    "node",
+    "koa",
+    "web",
+    "app",
+    "http",
+    "application",
+    "addon",
+    "open",
+    "browser",
+    "ibird-addon"
+  ],
+  "author": "yinfxs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yinfxs/ibird-open/issues"
+  },
+  "homepage": "https://github.com/yinfxs/ibird-open#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "cross-spawn": "^5.1.0",
+    "opn": "^5.1.0"
+  }
+}
