@@ -11,9 +11,14 @@ const namespace = 'ibird-open';
  * @param options
  */
 function onLoad(app, options) {
-    app.on('ibird:app:listen', (app, url) => {
-        openBrowser(url);
-    });
+    options = options || {};
+    options.env = options.env || 'development';
+
+    if (app.env === options.env) {
+        app.on('ibird:app:listen', (app, url) => {
+            openBrowser(url);
+        });
+    }
 }
 
 /**
