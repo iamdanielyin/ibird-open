@@ -10,7 +10,7 @@ const namespace = 'ibird-open';
  * @param app
  * @param options
  */
-function onLoad(app, options) {
+function onload(app, options) {
     options = options || {};
     options.env = options.env || 'development';
 
@@ -26,5 +26,5 @@ function onLoad(app, options) {
  */
 module.exports = {
     namespace,
-    onLoad
+    onload
 };
