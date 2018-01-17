@@ -1,6 +1,6 @@
 {
   "name": "ibird-open",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Open browser addon for ibird.",
   "main": "index.js",
   "repository": {

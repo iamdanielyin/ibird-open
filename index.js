@@ -15,7 +15,9 @@ function onload(app, options) {
     options.env = options.env || 'development';
 
     if (app.env === options.env) {
-        app.on('ibird:app:listen', (app, url) => {
+        app.on('ibird:app:listen', app => {
+            if (!app.c().port) return;
+            const url = `http://localhost:${app.c().port}`;
             openBrowser(url);
         });
     }
